@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.gz binary
+*.xlsx binary
+*.png binary
+*.eps binary
+*.pt binary
+*.joblib binary
+figure_sources/Figure5D_DerivedEndpointR2.csv binary

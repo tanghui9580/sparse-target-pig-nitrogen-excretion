@@ -1,0 +1,85 @@
+{
+  "status": "COMPLETE",
+  "selection_score_reference": 0.5230654982536393,
+  "matrix_906": "data/analysis_matrices/historical_906.csv",
+  "matrix_906_sha256": "1d18c1867b1ccd21df1bd3f12c9b738c748c9aef0606e9c51adddee6ada2bd60",
+  "matrix_546": "data/analysis_matrices/target_546_animal.csv",
+  "matrix_546_sha256": "c7cf2f68e6b4f40e7f61d65c4a28672a8c23d47a6b78304c5768755fb511bdfb",
+  "rows": {
+    "development": 673,
+    "target_546": 546,
+    "confirmation": 233
+  },
+  "groups": {
+    "development_studies": 122,
+    "target_sources": 91,
+    "confirmation_studies": 48
+  },
+  "features": [
+    "Initial_BW_kg",
+    "DMI_kg_d",
+    "Analysis_N_Intake_g_d",
+    "N_to_DMI_g_kg",
+    "DMI_per_BW",
+    "N_Intake_per_BW",
+    "Analysis_Diet_CP_pct_DM",
+    "Analysis_Diet_NDF_pct_DM",
+    "Analysis_Diet_ADF_pct_DM",
+    "Analysis_Diet_EE_pct_DM",
+    "Analysis_Diet_Starch_pct_DM"
+  ],
+  "inactive_feature": "Diet_Ash_pct_DM (all missing; excluded as inactive)",
+  "n_estimators": 200,
+  "n_estimators_note": "The model-selection specification recorded 24 structural RF configurations without an explicit tree count; 200 trees matches the implementation used for the reported analysis and is recorded here explicitly.",
+  "tuning_seed": 20260524,
+  "final_seeds": [
+    20260524,
+    20260617,
+    20260731
+  ],
+  "selected": {
+    "FN": {
+      "config_index": 3,
+      "config": {
+        "min_samples_leaf": 1,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      "tuning_seed_oof_rmse": 1.8297647617608712,
+      "alpha": 0.6541003116992397,
+      "three_seed_head_oof_rmse": 1.8318153861809485,
+      "hybrid_oof_rmse": 1.7996398146243011
+    },
+    "UN": {
+      "config_index": 4,
+      "config": {
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "tuning_seed_oof_rmse": 4.755807610389733,
+      "alpha": 0.5328736284863227,
+      "three_seed_head_oof_rmse": 4.764364177349578,
+      "hybrid_oof_rmse": 4.61287510415358
+    }
+  },
+  "reference_sd_673": {
+    "FN": 3.499821678938598,
+    "UN": 9.171022037334529
+  },
+  "environment": {
+    "python": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "leakage_guards": {
+    "233_used_for_selection": false,
+    "546_outcomes_used_for_selection": false,
+    "selected_sources_exit_later_evaluation": "enforced in the target-updating analysis; not applicable to direct transfer",
+    "development_confirmation_study_overlap": 0
+  },
+  "model_selection_specification": "config/model_selection_specification.json"
+}

@@ -1,0 +1,41 @@
+panel,rank,model,family,endpoint,metric,value,primary_nrmse,selected_primary,retained_robustness_comparator,downstream_role
+A,1,MLR+RF,Linear–nonlinear hybrid,FN,RMSE_g_d,1.850837125599556,0.5230654982536393,1,0,Development-selected model; selected by development-stage Mean NRMSE
+A,1,MLR+RF,Linear–nonlinear hybrid,FN,R2,0.7199146703221914,0.5230654982536393,1,0,Development-selected model; selected by development-stage Mean NRMSE
+A,1,MLR+RF,Linear–nonlinear hybrid,UN,RMSE_g_d,4.744109588586819,0.5230654982536393,1,0,Development-selected model; selected by development-stage Mean NRMSE
+A,1,MLR+RF,Linear–nonlinear hybrid,UN,R2,0.7320092880891598,0.5230654982536393,1,0,Development-selected model; selected by development-stage Mean NRMSE
+A,2,MLR+ET,Linear–nonlinear hybrid,FN,RMSE_g_d,1.878666216818157,0.5242440174628202,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,2,MLR+ET,Linear–nonlinear hybrid,FN,R2,0.711428651664983,0.5242440174628202,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,2,MLR+ET,Linear–nonlinear hybrid,UN,RMSE_g_d,4.6928019790814,0.5242440174628202,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,2,MLR+ET,Linear–nonlinear hybrid,UN,R2,0.7377745890483466,0.5242440174628202,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,3,MLR+TabM,Linear–nonlinear hybrid,FN,RMSE_g_d,1.84795851019605,0.5258798014637126,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,3,MLR+TabM,Linear–nonlinear hybrid,FN,R2,0.7207852287790528,0.5258798014637126,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,3,MLR+TabM,Linear–nonlinear hybrid,UN,RMSE_g_d,4.803272859366467,0.5258798014637126,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,3,MLR+TabM,Linear–nonlinear hybrid,UN,R2,0.7252834437417137,0.5258798014637126,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,4,MLR+XGB,Linear–nonlinear hybrid,FN,RMSE_g_d,1.885880969903973,0.5267509361696421,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,4,MLR+XGB,Linear–nonlinear hybrid,FN,R2,0.7092079604474651,0.5267509361696421,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,4,MLR+XGB,Linear–nonlinear hybrid,UN,RMSE_g_d,4.719878269398524,0.5267509361696421,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,4,MLR+XGB,Linear–nonlinear hybrid,UN,R2,0.7347399098693435,0.5267509361696421,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,5,TabM,Modern tabular AI/deep learning,FN,RMSE_g_d,1.832790957561603,0.5287360043649144,0,1,Retained prespecified external robustness comparator
+A,5,TabM,Modern tabular AI/deep learning,FN,R2,0.7253498603100078,0.5287360043649144,0,1,Retained prespecified external robustness comparator
+A,5,TabM,Modern tabular AI/deep learning,UN,RMSE_g_d,4.895406900841464,0.5287360043649144,0,1,Retained prespecified external robustness comparator
+A,5,TabM,Modern tabular AI/deep learning,UN,R2,0.714643408688326,0.5287360043649144,0,1,Retained prespecified external robustness comparator
+A,6,XGB,Tree-based ML,FN,RMSE_g_d,1.876507223787319,0.5347500438138399,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,6,XGB,Tree-based ML,FN,R2,0.7120915320959151,0.5347500438138399,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,6,XGB,Tree-based ML,UN,RMSE_g_d,4.891161457893491,0.5347500438138399,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,6,XGB,Tree-based ML,UN,R2,0.715138133577764,0.5347500438138399,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,7,MLR,Traditional statistical,FN,RMSE_g_d,1.912205359805208,0.5353746341506629,0,1,Retained prespecified external robustness comparator
+A,7,MLR,Traditional statistical,FN,R2,0.7010331610575233,0.5353746341506629,0,1,Retained prespecified external robustness comparator
+A,7,MLR,Traditional statistical,UN,RMSE_g_d,4.809073414799579,0.5353746341506629,0,1,Retained prespecified external robustness comparator
+A,7,MLR,Traditional statistical,UN,R2,0.7246195335952037,0.5353746341506629,0,1,Retained prespecified external robustness comparator
+A,8,ET,Tree-based ML,FN,RMSE_g_d,1.953202866088406,0.5357340206364869,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,8,ET,Tree-based ML,FN,R2,0.6880760922560161,0.5357340206364869,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,8,ET,Tree-based ML,UN,RMSE_g_d,4.708234385907211,0.5357340206364869,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,8,ET,Tree-based ML,UN,R2,0.7360470824562446,0.5357340206364869,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,9,RF,Tree-based ML,FN,RMSE_g_d,1.913988946059944,0.5409361320104977,0,1,Retained prespecified external robustness comparator
+A,9,RF,Tree-based ML,FN,R2,0.7004751856024458,0.5409361320104977,0,1,Retained prespecified external robustness comparator
+A,9,RF,Tree-based ML,UN,RMSE_g_d,4.906408898729671,0.5409361320104977,0,1,Retained prespecified external robustness comparator
+A,9,RF,Tree-based ML,UN,R2,0.7133593395411089,0.5409361320104977,0,1,Retained prespecified external robustness comparator
+A,10,ElasticNet,Traditional statistical,FN,RMSE_g_d,1.970536564712069,0.5424747298405397,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,10,ElasticNet,Traditional statistical,FN,R2,0.6825151887723013,0.5424747298405397,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,10,ElasticNet,Traditional statistical,UN,RMSE_g_d,4.786451105020802,0.5424747298405397,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial
+A,10,ElasticNet,Traditional statistical,UN,R2,0.7272042683458563,0.5424747298405397,0,0,Stage-I benchmark candidate only; not carried through the full downstream robustness factorial

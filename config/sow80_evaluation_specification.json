@@ -1,0 +1,61 @@
+{
+  "status": "COMPLETE_STRESS_TEST_ONLY",
+  "rows": 80,
+  "studies": 8,
+  "budgets": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "realizations": 1,
+  "architectures": [
+    "MLR",
+    "RF",
+    "TabM",
+    "MLR+RF"
+  ],
+  "selection_unit": "SOW treatment-stage mean Record_ID",
+  "selected_record_exit": true,
+  "selector_features_available": [
+    "Initial_BW_kg",
+    "DMI_kg_d",
+    "Analysis_N_Intake_g_d",
+    "N_to_DMI_g_kg",
+    "DMI_per_BW",
+    "N_Intake_per_BW",
+    "Analysis_Diet_CP_pct_DM",
+    "Analysis_Diet_EE_pct_DM",
+    "Analysis_Diet_NDF_pct_DM",
+    "Analysis_Diet_ADF_pct_DM",
+    "Diet_Ash_pct_DM"
+  ],
+  "selector_features_dropped_in_SOW": [],
+  "architecture_hyper_source": "673-record Study_ID-grouped OOF estimates from model development",
+  "metric_denominator": {
+    "FN_full_SOW80_sample_SD": 1.6108176829160203,
+    "UN_full_SOW80_sample_SD": 9.605333298996456
+  },
+  "outcomes_used_to_reselect_sampling_or_updater": false,
+  "inputs": {
+    "matrix_906_sha256": "1d18c1867b1ccd21df1bd3f12c9b738c748c9aef0606e9c51adddee6ada2bd60",
+    "sow_predictions_sha256": "3886492b76fb0dc0a2a7c77fe19ba5cb059760618a0f90697d9443cb5ce8ea52",
+    "primary_oof_sha256": "20efc2a5c4f31b138fc9fa396ac2004346d4223ed0f1e5538a24c099dc9a2047",
+    "tabm_oof_sha256": "5273d1a14bd89e835e9481029e64d085fc9a2c0d10c4a64e059626cadfa51541",
+    "primary_model_specification_sha256": "7665792a383a1b588c5d9aac3262b5aa341e2f0eb83ec79522180b71d82c292f"
+  },
+  "selected_from_546": {
+    "sampling": "RSGS",
+    "updater": "CG-HPP",
+    "target_updating_specification_sha256": "1c7373abac9f123018d593375d4562bba66e68c2edf1d8685cb37494fdaf27bd"
+  },
+  "response_surface_definition": "all-906 MLR+RF predictions generated before SOW outcome use",
+  "CG_HPP_domain": "Study_ID",
+  "local_only_update": {
+    "Ridge_alpha": 1.0,
+    "ElasticNet_alpha": 0.1,
+    "ElasticNet_l1_ratio": 0.5,
+    "RF_trees": 60,
+    "RF_seed": 20260524
+  }
+}

@@ -1,0 +1,337 @@
+Architecture,Geometry,Budget,Rank,Source_unit,Ingredient_Class
+MLR,MLR,3,1,Sorghum::RealV6_高粱_sample9,Sorghum
+MLR,MLR,3,2,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+MLR,MLR,3,3,Rice bran::RealV6_米糠_sample6,Rice bran
+MLR,MLR,6,1,Cassava::RealV6_木薯_sample1,Cassava
+MLR,MLR,6,2,Paddy rice::RealV6_稻谷_sample10,Paddy rice
+MLR,MLR,6,3,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+MLR,MLR,6,4,Sorghum::RealV6_高粱_sample1,Sorghum
+MLR,MLR,6,5,Wheat bran::RealV6_小麦麸_sample8,Wheat bran
+MLR,MLR,6,6,Wheat::RealV6_小麦_sample4,Wheat
+MLR,MLR,9,1,Barley::RealV6_大麦_sample6,Barley
+MLR,MLR,9,2,Brown rice::RealV6_糙米_sample3,Brown rice
+MLR,MLR,9,3,Cassava::RealV6_木薯_sample4,Cassava
+MLR,MLR,9,4,Paddy rice::RealV6_稻谷_sample4,Paddy rice
+MLR,MLR,9,5,Rapeseed cake::RealV6_菜籽饼_sample9,Rapeseed cake
+MLR,MLR,9,6,Barley::RealV6_大麦_sample10,Barley
+MLR,MLR,9,7,Sorghum::RealV6_高粱_sample9,Sorghum
+MLR,MLR,9,8,Wheat bran::RealV6_小麦麸_sample8,Wheat bran
+MLR,MLR,9,9,Wheat::RealV6_小麦_sample2,Wheat
+MLR,MLR,12,1,Barley::RealV6_大麦_sample6,Barley
+MLR,MLR,12,2,Brown rice::RealV6_糙米_sample4,Brown rice
+MLR,MLR,12,3,Brown rice::RealV6_糙米_sample5,Brown rice
+MLR,MLR,12,4,Cassava::RealV6_木薯_sample2,Cassava
+MLR,MLR,12,5,Cassava::RealV6_木薯_sample5,Cassava
+MLR,MLR,12,6,Paddy rice::RealV6_稻谷_sample4,Paddy rice
+MLR,MLR,12,7,Rapeseed cake::RealV6_菜籽饼_sample9,Rapeseed cake
+MLR,MLR,12,8,Rice bran::RealV6_米糠_sample4,Rice bran
+MLR,MLR,12,9,Barley::RealV6_大麦_sample9,Barley
+MLR,MLR,12,10,Sorghum::RealV6_高粱_sample7,Sorghum
+MLR,MLR,12,11,Wheat bran::RealV6_小麦麸_sample8,Wheat bran
+MLR,MLR,12,12,Wheat::RealV6_小麦_sample5,Wheat
+MLR,MLR,15,1,Barley::RealV6_大麦_sample6,Barley
+MLR,MLR,15,2,Barley::RealV6_大麦_sample10,Barley
+MLR,MLR,15,3,Brown rice::RealV6_糙米_sample3,Brown rice
+MLR,MLR,15,4,Brown rice::RealV6_糙米_sample9,Brown rice
+MLR,MLR,15,5,Cassava::RealV6_木薯_sample2,Cassava
+MLR,MLR,15,6,Cassava::RealV6_木薯_sample10,Cassava
+MLR,MLR,15,7,Paddy rice::RealV6_稻谷_sample4,Paddy rice
+MLR,MLR,15,8,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+MLR,MLR,15,9,Rapeseed cake::RealV6_菜籽饼_sample2,Rapeseed cake
+MLR,MLR,15,10,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+MLR,MLR,15,11,Rice bran::RealV6_米糠_sample2,Rice bran
+MLR,MLR,15,12,Rice bran::RealV6_米糠_sample10,Rice bran
+MLR,MLR,15,13,Sorghum::RealV6_高粱_sample5,Sorghum
+MLR,MLR,15,14,Wheat bran::RealV6_小麦麸_sample8,Wheat bran
+MLR,MLR,15,15,Wheat::RealV6_小麦_sample2,Wheat
+MLR,MLR,18,1,Barley::RealV6_大麦_sample6,Barley
+MLR,MLR,18,2,Barley::RealV6_大麦_sample7,Barley
+MLR,MLR,18,3,Brown rice::RealV6_糙米_sample3,Brown rice
+MLR,MLR,18,4,Brown rice::RealV6_糙米_sample9,Brown rice
+MLR,MLR,18,5,Cassava::RealV6_木薯_sample4,Cassava
+MLR,MLR,18,6,Cassava::RealV6_木薯_sample10,Cassava
+MLR,MLR,18,7,Paddy rice::RealV6_稻谷_sample1,Paddy rice
+MLR,MLR,18,8,Paddy rice::RealV6_稻谷_sample7,Paddy rice
+MLR,MLR,18,9,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+MLR,MLR,18,10,Rapeseed cake::RealV6_菜籽饼_sample2,Rapeseed cake
+MLR,MLR,18,11,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+MLR,MLR,18,12,Rice bran::RealV6_米糠_sample7,Rice bran
+MLR,MLR,18,13,Rice bran::RealV6_米糠_sample10,Rice bran
+MLR,MLR,18,14,Rice bran::RealV6_米糠_sample5,Rice bran
+MLR,MLR,18,15,Sorghum::RealV6_高粱_sample5,Sorghum
+MLR,MLR,18,16,Wheat bran::RealV6_小麦麸_sample4,Wheat bran
+MLR,MLR,18,17,Wheat::RealV6_小麦_sample1,Wheat
+MLR,MLR,18,18,Wheat::RealV6_小麦_sample7,Wheat
+MLR,MLR,21,1,Barley::RealV6_大麦_sample6,Barley
+MLR,MLR,21,2,Barley::RealV6_大麦_sample7,Barley
+MLR,MLR,21,3,Brown rice::RealV6_糙米_sample4,Brown rice
+MLR,MLR,21,4,Brown rice::RealV6_糙米_sample9,Brown rice
+MLR,MLR,21,5,Cassava::RealV6_木薯_sample4,Cassava
+MLR,MLR,21,6,Cassava::RealV6_木薯_sample10,Cassava
+MLR,MLR,21,7,Paddy rice::RealV6_稻谷_sample1,Paddy rice
+MLR,MLR,21,8,Paddy rice::RealV6_稻谷_sample11,Paddy rice
+MLR,MLR,21,9,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+MLR,MLR,21,10,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+MLR,MLR,21,11,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+MLR,MLR,21,12,Rice bran::RealV6_米糠_sample2,Rice bran
+MLR,MLR,21,13,Rice bran::RealV6_米糠_sample9,Rice bran
+MLR,MLR,21,14,Rice bran::RealV6_米糠_sample5,Rice bran
+MLR,MLR,21,15,Sorghum::RealV6_高粱_sample2,Sorghum
+MLR,MLR,21,16,Sorghum::RealV6_高粱_sample8,Sorghum
+MLR,MLR,21,17,Wheat bran::RealV6_小麦麸_sample1,Wheat bran
+MLR,MLR,21,18,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+MLR,MLR,21,19,Wheat::RealV6_小麦_sample2,Wheat
+MLR,MLR,21,20,Wheat::RealV6_小麦_sample4,Wheat
+MLR,MLR,21,21,Wheat::RealV6_小麦_sample10,Wheat
+RF,RF,3,1,Sorghum::RealV6_高粱_sample9,Sorghum
+RF,RF,3,2,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+RF,RF,3,3,Rice bran::RealV6_米糠_sample6,Rice bran
+RF,RF,6,1,Cassava::RealV6_木薯_sample4,Cassava
+RF,RF,6,2,Paddy rice::RealV6_稻谷_sample2,Paddy rice
+RF,RF,6,3,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+RF,RF,6,4,Sorghum::RealV6_高粱_sample7,Sorghum
+RF,RF,6,5,Wheat bran::RealV6_小麦麸_sample5,Wheat bran
+RF,RF,6,6,Wheat::RealV6_小麦_sample8,Wheat
+RF,RF,9,1,Barley::RealV6_大麦_sample2,Barley
+RF,RF,9,2,Brown rice::RealV6_糙米_sample9,Brown rice
+RF,RF,9,3,Cassava::RealV6_木薯_sample3,Cassava
+RF,RF,9,4,Paddy rice::RealV6_稻谷_sample2,Paddy rice
+RF,RF,9,5,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+RF,RF,9,6,Barley::RealV6_大麦_sample10,Barley
+RF,RF,9,7,Sorghum::RealV6_高粱_sample5,Sorghum
+RF,RF,9,8,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+RF,RF,9,9,Wheat::RealV6_小麦_sample4,Wheat
+RF,RF,12,1,Barley::RealV6_大麦_sample6,Barley
+RF,RF,12,2,Brown rice::RealV6_糙米_sample7,Brown rice
+RF,RF,12,3,Brown rice::RealV6_糙米_sample2,Brown rice
+RF,RF,12,4,Cassava::RealV6_木薯_sample8,Cassava
+RF,RF,12,5,Cassava::RealV6_木薯_sample3,Cassava
+RF,RF,12,6,Paddy rice::RealV6_稻谷_sample8,Paddy rice
+RF,RF,12,7,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+RF,RF,12,8,Rice bran::RealV6_米糠_sample1,Rice bran
+RF,RF,12,9,Rice bran::RealV6_米糠_sample10,Rice bran
+RF,RF,12,10,Sorghum::RealV6_高粱_sample6,Sorghum
+RF,RF,12,11,Wheat bran::RealV6_小麦麸_sample4,Wheat bran
+RF,RF,12,12,Wheat::RealV6_小麦_sample6,Wheat
+RF,RF,15,1,Barley::RealV6_大麦_sample5,Barley
+RF,RF,15,2,Barley::RealV6_大麦_sample9,Barley
+RF,RF,15,3,Brown rice::RealV6_糙米_sample7,Brown rice
+RF,RF,15,4,Brown rice::RealV6_糙米_sample2,Brown rice
+RF,RF,15,5,Cassava::RealV6_木薯_sample1,Cassava
+RF,RF,15,6,Cassava::RealV6_木薯_sample3,Cassava
+RF,RF,15,7,Paddy rice::RealV6_稻谷_sample8,Paddy rice
+RF,RF,15,8,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+RF,RF,15,9,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+RF,RF,15,10,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+RF,RF,15,11,Rice bran::RealV6_米糠_sample1,Rice bran
+RF,RF,15,12,Rice bran::RealV6_米糠_sample10,Rice bran
+RF,RF,15,13,Sorghum::RealV6_高粱_sample7,Sorghum
+RF,RF,15,14,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+RF,RF,15,15,Wheat::RealV6_小麦_sample4,Wheat
+RF,RF,18,1,Barley::RealV6_大麦_sample2,Barley
+RF,RF,18,2,Barley::RealV6_大麦_sample7,Barley
+RF,RF,18,3,Brown rice::RealV6_糙米_sample7,Brown rice
+RF,RF,18,4,Brown rice::RealV6_糙米_sample2,Brown rice
+RF,RF,18,5,Cassava::RealV6_木薯_sample1,Cassava
+RF,RF,18,6,Cassava::RealV6_木薯_sample3,Cassava
+RF,RF,18,7,Paddy rice::RealV6_稻谷_sample4,Paddy rice
+RF,RF,18,8,Paddy rice::RealV6_稻谷_sample8,Paddy rice
+RF,RF,18,9,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+RF,RF,18,10,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+RF,RF,18,11,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+RF,RF,18,12,Rice bran::RealV6_米糠_sample1,Rice bran
+RF,RF,18,13,Rice bran::RealV6_米糠_sample10,Rice bran
+RF,RF,18,14,Rice bran::RealV6_米糠_sample5,Rice bran
+RF,RF,18,15,Sorghum::RealV6_高粱_sample7,Sorghum
+RF,RF,18,16,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+RF,RF,18,17,Wheat::RealV6_小麦_sample4,Wheat
+RF,RF,18,18,Wheat::RealV6_小麦_sample2,Wheat
+RF,RF,21,1,Barley::RealV6_大麦_sample3,Barley
+RF,RF,21,2,Barley::RealV6_大麦_sample9,Barley
+RF,RF,21,3,Brown rice::RealV6_糙米_sample7,Brown rice
+RF,RF,21,4,Brown rice::RealV6_糙米_sample2,Brown rice
+RF,RF,21,5,Cassava::RealV6_木薯_sample8,Cassava
+RF,RF,21,6,Cassava::RealV6_木薯_sample3,Cassava
+RF,RF,21,7,Paddy rice::RealV6_稻谷_sample1,Paddy rice
+RF,RF,21,8,Paddy rice::RealV6_稻谷_sample2,Paddy rice
+RF,RF,21,9,Rapeseed cake::RealV6_菜籽饼_sample9,Rapeseed cake
+RF,RF,21,10,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+RF,RF,21,11,Rapeseed cake::RealV6_菜籽饼_sample1,Rapeseed cake
+RF,RF,21,12,Rice bran::RealV6_米糠_sample2,Rice bran
+RF,RF,21,13,Rice bran::RealV6_米糠_sample6,Rice bran
+RF,RF,21,14,Rice bran::RealV6_米糠_sample5,Rice bran
+RF,RF,21,15,Sorghum::RealV6_高粱_sample6,Sorghum
+RF,RF,21,16,Sorghum::RealV6_高粱_sample8,Sorghum
+RF,RF,21,17,Wheat bran::RealV6_小麦麸_sample1,Wheat bran
+RF,RF,21,18,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+RF,RF,21,19,Wheat::RealV6_小麦_sample2,Wheat
+RF,RF,21,20,Wheat::RealV6_小麦_sample1,Wheat
+RF,RF,21,21,Wheat::RealV6_小麦_sample7,Wheat
+TabM,TabM,3,1,Sorghum::RealV6_高粱_sample8,Sorghum
+TabM,TabM,3,2,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+TabM,TabM,3,3,Rice bran::RealV6_米糠_sample6,Rice bran
+TabM,TabM,6,1,Cassava::RealV6_木薯_sample2,Cassava
+TabM,TabM,6,2,Paddy rice::RealV6_稻谷_sample10,Paddy rice
+TabM,TabM,6,3,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+TabM,TabM,6,4,Sorghum::RealV6_高粱_sample1,Sorghum
+TabM,TabM,6,5,Wheat bran::RealV6_小麦麸_sample8,Wheat bran
+TabM,TabM,6,6,Wheat::RealV6_小麦_sample9,Wheat
+TabM,TabM,9,1,Barley::RealV6_大麦_sample6,Barley
+TabM,TabM,9,2,Brown rice::RealV6_糙米_sample4,Brown rice
+TabM,TabM,9,3,Cassava::RealV6_木薯_sample4,Cassava
+TabM,TabM,9,4,Paddy rice::RealV6_稻谷_sample10,Paddy rice
+TabM,TabM,9,5,Rapeseed cake::RealV6_菜籽饼_sample9,Rapeseed cake
+TabM,TabM,9,6,Barley::RealV6_大麦_sample8,Barley
+TabM,TabM,9,7,Sorghum::RealV6_高粱_sample1,Sorghum
+TabM,TabM,9,8,Wheat bran::RealV6_小麦麸_sample2,Wheat bran
+TabM,TabM,9,9,Wheat::RealV6_小麦_sample8,Wheat
+TabM,TabM,12,1,Barley::RealV6_大麦_sample6,Barley
+TabM,TabM,12,2,Brown rice::RealV6_糙米_sample3,Brown rice
+TabM,TabM,12,3,Brown rice::RealV6_糙米_sample8,Brown rice
+TabM,TabM,12,4,Cassava::RealV6_木薯_sample2,Cassava
+TabM,TabM,12,5,Cassava::RealV6_木薯_sample3,Cassava
+TabM,TabM,12,6,Paddy rice::RealV6_稻谷_sample6,Paddy rice
+TabM,TabM,12,7,Rapeseed cake::RealV6_菜籽饼_sample9,Rapeseed cake
+TabM,TabM,12,8,Rice bran::RealV6_米糠_sample1,Rice bran
+TabM,TabM,12,9,Rice bran::RealV6_米糠_sample10,Rice bran
+TabM,TabM,12,10,Sorghum::RealV6_高粱_sample9,Sorghum
+TabM,TabM,12,11,Wheat bran::RealV6_小麦麸_sample2,Wheat bran
+TabM,TabM,12,12,Wheat::RealV6_小麦_sample7,Wheat
+TabM,TabM,15,1,Barley::RealV6_大麦_sample5,Barley
+TabM,TabM,15,2,Barley::RealV6_大麦_sample10,Barley
+TabM,TabM,15,3,Brown rice::RealV6_糙米_sample7,Brown rice
+TabM,TabM,15,4,Brown rice::RealV6_糙米_sample8,Brown rice
+TabM,TabM,15,5,Cassava::RealV6_木薯_sample1,Cassava
+TabM,TabM,15,6,Cassava::RealV6_木薯_sample5,Cassava
+TabM,TabM,15,7,Paddy rice::RealV6_稻谷_sample9,Paddy rice
+TabM,TabM,15,8,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+TabM,TabM,15,9,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+TabM,TabM,15,10,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+TabM,TabM,15,11,Rice bran::RealV6_米糠_sample7,Rice bran
+TabM,TabM,15,12,Rice bran::RealV6_米糠_sample10,Rice bran
+TabM,TabM,15,13,Sorghum::RealV6_高粱_sample10,Sorghum
+TabM,TabM,15,14,Wheat bran::RealV6_小麦麸_sample4,Wheat bran
+TabM,TabM,15,15,Wheat::RealV6_小麦_sample6,Wheat
+TabM,TabM,18,1,Barley::RealV6_大麦_sample1,Barley
+TabM,TabM,18,2,Barley::RealV6_大麦_sample8,Barley
+TabM,TabM,18,3,Brown rice::RealV6_糙米_sample3,Brown rice
+TabM,TabM,18,4,Brown rice::RealV6_糙米_sample6,Brown rice
+TabM,TabM,18,5,Cassava::RealV6_木薯_sample2,Cassava
+TabM,TabM,18,6,Cassava::RealV6_木薯_sample10,Cassava
+TabM,TabM,18,7,Paddy rice::RealV6_稻谷_sample1,Paddy rice
+TabM,TabM,18,8,Paddy rice::RealV6_稻谷_sample11,Paddy rice
+TabM,TabM,18,9,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+TabM,TabM,18,10,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+TabM,TabM,18,11,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+TabM,TabM,18,12,Rice bran::RealV6_米糠_sample1,Rice bran
+TabM,TabM,18,13,Rice bran::RealV6_米糠_sample10,Rice bran
+TabM,TabM,18,14,Rice bran::RealV6_米糠_sample5,Rice bran
+TabM,TabM,18,15,Sorghum::RealV6_高粱_sample3,Sorghum
+TabM,TabM,18,16,Wheat bran::RealV6_小麦麸_sample6,Wheat bran
+TabM,TabM,18,17,Wheat::RealV6_小麦_sample1,Wheat
+TabM,TabM,18,18,Wheat::RealV6_小麦_sample9,Wheat
+TabM,TabM,21,1,Barley::RealV6_大麦_sample5,Barley
+TabM,TabM,21,2,Barley::RealV6_大麦_sample7,Barley
+TabM,TabM,21,3,Brown rice::RealV6_糙米_sample3,Brown rice
+TabM,TabM,21,4,Brown rice::RealV6_糙米_sample8,Brown rice
+TabM,TabM,21,5,Cassava::RealV6_木薯_sample1,Cassava
+TabM,TabM,21,6,Cassava::RealV6_木薯_sample9,Cassava
+TabM,TabM,21,7,Paddy rice::RealV6_稻谷_sample1,Paddy rice
+TabM,TabM,21,8,Paddy rice::RealV6_稻谷_sample8,Paddy rice
+TabM,TabM,21,9,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+TabM,TabM,21,10,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+TabM,TabM,21,11,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+TabM,TabM,21,12,Rice bran::RealV6_米糠_sample1,Rice bran
+TabM,TabM,21,13,Rice bran::RealV6_米糠_sample9,Rice bran
+TabM,TabM,21,14,Rice bran::RealV6_米糠_sample5,Rice bran
+TabM,TabM,21,15,Sorghum::RealV6_高粱_sample6,Sorghum
+TabM,TabM,21,16,Sorghum::RealV6_高粱_sample1,Sorghum
+TabM,TabM,21,17,Wheat bran::RealV6_小麦麸_sample1,Wheat bran
+TabM,TabM,21,18,Wheat bran::RealV6_小麦麸_sample6,Wheat bran
+TabM,TabM,21,19,Wheat::RealV6_小麦_sample2,Wheat
+TabM,TabM,21,20,Wheat::RealV6_小麦_sample3,Wheat
+TabM,TabM,21,21,Wheat::RealV6_小麦_sample10,Wheat
+MLR+RF,MLR+RF,3,1,Sorghum::RealV6_高粱_sample9,Sorghum
+MLR+RF,MLR+RF,3,2,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+MLR+RF,MLR+RF,3,3,Rice bran::RealV6_米糠_sample6,Rice bran
+MLR+RF,MLR+RF,6,1,Cassava::RealV6_木薯_sample4,Cassava
+MLR+RF,MLR+RF,6,2,Paddy rice::RealV6_稻谷_sample10,Paddy rice
+MLR+RF,MLR+RF,6,3,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+MLR+RF,MLR+RF,6,4,Sorghum::RealV6_高粱_sample6,Sorghum
+MLR+RF,MLR+RF,6,5,Wheat bran::RealV6_小麦麸_sample4,Wheat bran
+MLR+RF,MLR+RF,6,6,Wheat::RealV6_小麦_sample1,Wheat
+MLR+RF,MLR+RF,9,1,Barley::RealV6_大麦_sample1,Barley
+MLR+RF,MLR+RF,9,2,Brown rice::RealV6_糙米_sample4,Brown rice
+MLR+RF,MLR+RF,9,3,Cassava::RealV6_木薯_sample7,Cassava
+MLR+RF,MLR+RF,9,4,Paddy rice::RealV6_稻谷_sample1,Paddy rice
+MLR+RF,MLR+RF,9,5,Rapeseed cake::RealV6_菜籽饼_sample8,Rapeseed cake
+MLR+RF,MLR+RF,9,6,Barley::RealV6_大麦_sample10,Barley
+MLR+RF,MLR+RF,9,7,Sorghum::RealV6_高粱_sample2,Sorghum
+MLR+RF,MLR+RF,9,8,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+MLR+RF,MLR+RF,9,9,Wheat::RealV6_小麦_sample5,Wheat
+MLR+RF,MLR+RF,12,1,Barley::RealV6_大麦_sample6,Barley
+MLR+RF,MLR+RF,12,2,Brown rice::RealV6_糙米_sample7,Brown rice
+MLR+RF,MLR+RF,12,3,Brown rice::RealV6_糙米_sample8,Brown rice
+MLR+RF,MLR+RF,12,4,Cassava::RealV6_木薯_sample8,Cassava
+MLR+RF,MLR+RF,12,5,Cassava::RealV6_木薯_sample3,Cassava
+MLR+RF,MLR+RF,12,6,Paddy rice::RealV6_稻谷_sample6,Paddy rice
+MLR+RF,MLR+RF,12,7,Rapeseed cake::RealV6_菜籽饼_sample9,Rapeseed cake
+MLR+RF,MLR+RF,12,8,Rice bran::RealV6_米糠_sample1,Rice bran
+MLR+RF,MLR+RF,12,9,Rice bran::RealV6_米糠_sample10,Rice bran
+MLR+RF,MLR+RF,12,10,Sorghum::RealV6_高粱_sample6,Sorghum
+MLR+RF,MLR+RF,12,11,Wheat bran::RealV6_小麦麸_sample4,Wheat bran
+MLR+RF,MLR+RF,12,12,Wheat::RealV6_小麦_sample6,Wheat
+MLR+RF,MLR+RF,15,1,Barley::RealV6_大麦_sample2,Barley
+MLR+RF,MLR+RF,15,2,Barley::RealV6_大麦_sample10,Barley
+MLR+RF,MLR+RF,15,3,Brown rice::RealV6_糙米_sample3,Brown rice
+MLR+RF,MLR+RF,15,4,Brown rice::RealV6_糙米_sample8,Brown rice
+MLR+RF,MLR+RF,15,5,Cassava::RealV6_木薯_sample1,Cassava
+MLR+RF,MLR+RF,15,6,Cassava::RealV6_木薯_sample9,Cassava
+MLR+RF,MLR+RF,15,7,Paddy rice::RealV6_稻谷_sample9,Paddy rice
+MLR+RF,MLR+RF,15,8,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+MLR+RF,MLR+RF,15,9,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+MLR+RF,MLR+RF,15,10,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+MLR+RF,MLR+RF,15,11,Rice bran::RealV6_米糠_sample1,Rice bran
+MLR+RF,MLR+RF,15,12,Rice bran::RealV6_米糠_sample10,Rice bran
+MLR+RF,MLR+RF,15,13,Sorghum::RealV6_高粱_sample6,Sorghum
+MLR+RF,MLR+RF,15,14,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+MLR+RF,MLR+RF,15,15,Wheat::RealV6_小麦_sample4,Wheat
+MLR+RF,MLR+RF,18,1,Barley::RealV6_大麦_sample3,Barley
+MLR+RF,MLR+RF,18,2,Barley::RealV6_大麦_sample7,Barley
+MLR+RF,MLR+RF,18,3,Brown rice::RealV6_糙米_sample3,Brown rice
+MLR+RF,MLR+RF,18,4,Brown rice::RealV6_糙米_sample8,Brown rice
+MLR+RF,MLR+RF,18,5,Cassava::RealV6_木薯_sample2,Cassava
+MLR+RF,MLR+RF,18,6,Cassava::RealV6_木薯_sample7,Cassava
+MLR+RF,MLR+RF,18,7,Paddy rice::RealV6_稻谷_sample4,Paddy rice
+MLR+RF,MLR+RF,18,8,Paddy rice::RealV6_稻谷_sample8,Paddy rice
+MLR+RF,MLR+RF,18,9,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+MLR+RF,MLR+RF,18,10,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+MLR+RF,MLR+RF,18,11,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+MLR+RF,MLR+RF,18,12,Rice bran::RealV6_米糠_sample1,Rice bran
+MLR+RF,MLR+RF,18,13,Rice bran::RealV6_米糠_sample10,Rice bran
+MLR+RF,MLR+RF,18,14,Rice bran::RealV6_米糠_sample5,Rice bran
+MLR+RF,MLR+RF,18,15,Sorghum::RealV6_高粱_sample6,Sorghum
+MLR+RF,MLR+RF,18,16,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+MLR+RF,MLR+RF,18,17,Wheat::RealV6_小麦_sample1,Wheat
+MLR+RF,MLR+RF,18,18,Wheat::RealV6_小麦_sample2,Wheat
+MLR+RF,MLR+RF,21,1,Barley::RealV6_大麦_sample3,Barley
+MLR+RF,MLR+RF,21,2,Barley::RealV6_大麦_sample7,Barley
+MLR+RF,MLR+RF,21,3,Brown rice::RealV6_糙米_sample3,Brown rice
+MLR+RF,MLR+RF,21,4,Brown rice::RealV6_糙米_sample6,Brown rice
+MLR+RF,MLR+RF,21,5,Cassava::RealV6_木薯_sample2,Cassava
+MLR+RF,MLR+RF,21,6,Cassava::RealV6_木薯_sample7,Cassava
+MLR+RF,MLR+RF,21,7,Paddy rice::RealV6_稻谷_sample1,Paddy rice
+MLR+RF,MLR+RF,21,8,Paddy rice::RealV6_稻谷_sample11,Paddy rice
+MLR+RF,MLR+RF,21,9,Rapeseed cake::RealV6_菜籽饼_sample10,Rapeseed cake
+MLR+RF,MLR+RF,21,10,Rapeseed cake::RealV6_菜籽饼_sample3,Rapeseed cake
+MLR+RF,MLR+RF,21,11,Rapeseed cake::RealV6_菜籽饼_sample6,Rapeseed cake
+MLR+RF,MLR+RF,21,12,Rice bran::RealV6_米糠_sample1,Rice bran
+MLR+RF,MLR+RF,21,13,Rice bran::RealV6_米糠_sample10,Rice bran
+MLR+RF,MLR+RF,21,14,Rice bran::RealV6_米糠_sample5,Rice bran
+MLR+RF,MLR+RF,21,15,Sorghum::RealV6_高粱_sample2,Sorghum
+MLR+RF,MLR+RF,21,16,Sorghum::RealV6_高粱_sample5,Sorghum
+MLR+RF,MLR+RF,21,17,Wheat bran::RealV6_小麦麸_sample1,Wheat bran
+MLR+RF,MLR+RF,21,18,Wheat bran::RealV6_小麦麸_sample7,Wheat bran
+MLR+RF,MLR+RF,21,19,Wheat::RealV6_小麦_sample2,Wheat
+MLR+RF,MLR+RF,21,20,Wheat::RealV6_小麦_sample1,Wheat
+MLR+RF,MLR+RF,21,21,Wheat::RealV6_小麦_sample7,Wheat

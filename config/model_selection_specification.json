@@ -1,0 +1,760 @@
+{
+  "selection_data": "673 development rows only",
+  "data_path": "data/analysis_matrices/historical_906.csv",
+  "data_sha256": "1d18c1867b1ccd21df1bd3f12c9b738c748c9aef0606e9c51adddee6ada2bd60",
+  "features": [
+    "Initial_BW_kg",
+    "DMI_kg_d",
+    "Analysis_N_Intake_g_d",
+    "N_to_DMI_g_kg",
+    "DMI_per_BW",
+    "N_Intake_per_BW",
+    "Analysis_Diet_CP_pct_DM",
+    "Analysis_Diet_NDF_pct_DM",
+    "Analysis_Diet_ADF_pct_DM",
+    "Analysis_Diet_EE_pct_DM",
+    "Analysis_Diet_Starch_pct_DM"
+  ],
+  "inactive_P2": "Diet_Ash_pct_DM (all missing; excluded as inactive)",
+  "targets": {
+    "FN": "Analysis_Fecal_N_g_d",
+    "UN": "Analysis_Urinary_N_g_d"
+  },
+  "outer_cv": "GroupKFold(n_splits=5) on Study_ID within 673; outer test never used for HPO or alpha",
+  "inner_cv": "GroupKFold(n_splits=4) on outer-training Study_ID; config selected by pooled inner-OOF endpoint RMSE",
+  "winner_metric": "aggregate outer-OOF Primary-NRMSE = 0.5*(RMSE_FN/SD673_FN + RMSE_UN/SD673_UN), lower is better",
+  "candidate_models": [
+    "MLR",
+    "ElasticNet",
+    "RF",
+    "ET",
+    "XGB",
+    "TabM",
+    "MLR+RF",
+    "MLR+ET",
+    "MLR+XGB",
+    "MLR+TabM"
+  ],
+  "hpo_budget": "24 prespecified configurations per tunable family per endpoint in every outer fold; equal candidate count, not equal FLOPs",
+  "hpo_tuning_seed": 20260524,
+  "final_model_seeds": [
+    20260524,
+    20260617,
+    20260731
+  ],
+  "hybrid_rule": "For each outer fold and endpoint: select head config on inner OOF; generate selected-head inner OOF averaged over 3 prespecified seeds; estimate clipped least-squares alpha using only inner OOF; then fit base/head on all outer train and apply alpha to untouched outer test.",
+  "preprocessing": "Fold-local median imputation. StandardScaler for MLR/ElasticNet/TabM; no scaling for RF/ET/XGB. TabM target standardized using training-fold mean and sample SD only.",
+  "refit_for_233": "After model selection from 673 outer OOF predictions, repeat the same 24-configuration HPO for the selected head on all 673 records with 5-fold Study_ID GroupKFold; estimate hybrid alpha from 5-fold OOF predictions only; refit on all 673 records; then evaluate the 233-record confirmation set once. The confirmation set is not used for reselection.",
+  "grids": {
+    "ElasticNet": [
+      {
+        "alpha": 1e-05,
+        "l1_ratio": 0.1
+      },
+      {
+        "alpha": 1e-05,
+        "l1_ratio": 0.5
+      },
+      {
+        "alpha": 1e-05,
+        "l1_ratio": 0.9
+      },
+      {
+        "alpha": 1e-05,
+        "l1_ratio": 0.99
+      },
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.1
+      },
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.5
+      },
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.9
+      },
+      {
+        "alpha": 0.0001,
+        "l1_ratio": 0.99
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.1
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.5
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.9
+      },
+      {
+        "alpha": 0.001,
+        "l1_ratio": 0.99
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.1
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.5
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.9
+      },
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.99
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.1
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.5
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.9
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.99
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.1
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.5
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.9
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.99
+      }
+    ],
+    "RF": [
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 1.0,
+        "max_depth": 8
+      }
+    ],
+    "ET": [
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 4,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.5,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.5,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      {
+        "min_samples_leaf": 8,
+        "max_features": 1.0,
+        "max_depth": 8
+      }
+    ],
+    "XGB": [
+      {
+        "max_depth": 2,
+        "min_child_weight": 1,
+        "learning_rate": 0.03,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 2,
+        "min_child_weight": 1,
+        "learning_rate": 0.03,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 2,
+        "min_child_weight": 1,
+        "learning_rate": 0.07,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 2,
+        "min_child_weight": 1,
+        "learning_rate": 0.07,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 2,
+        "min_child_weight": 5,
+        "learning_rate": 0.03,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 2,
+        "min_child_weight": 5,
+        "learning_rate": 0.03,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 2,
+        "min_child_weight": 5,
+        "learning_rate": 0.07,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 2,
+        "min_child_weight": 5,
+        "learning_rate": 0.07,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "learning_rate": 0.03,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "learning_rate": 0.03,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "learning_rate": 0.07,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "learning_rate": 0.07,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 5,
+        "learning_rate": 0.03,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 5,
+        "learning_rate": 0.03,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 5,
+        "learning_rate": 0.07,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 3,
+        "min_child_weight": 5,
+        "learning_rate": 0.07,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 1,
+        "learning_rate": 0.03,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 1,
+        "learning_rate": 0.03,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 1,
+        "learning_rate": 0.07,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 1,
+        "learning_rate": 0.07,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 5,
+        "learning_rate": 0.03,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 5,
+        "learning_rate": 0.03,
+        "subsample": 1.0
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 5,
+        "learning_rate": 0.07,
+        "subsample": 0.75
+      },
+      {
+        "max_depth": 4,
+        "min_child_weight": 5,
+        "learning_rate": 0.07,
+        "subsample": 1.0
+      }
+    ],
+    "TabM": [
+      {
+        "d_block": 64,
+        "n_blocks": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 64,
+        "n_blocks": 2,
+        "dropout": 0.1,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 64,
+        "n_blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 64,
+        "n_blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 64,
+        "n_blocks": 3,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 64,
+        "n_blocks": 3,
+        "dropout": 0.1,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 64,
+        "n_blocks": 3,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 64,
+        "n_blocks": 3,
+        "dropout": 0.2,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 2,
+        "dropout": 0.1,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 3,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 3,
+        "dropout": 0.1,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 3,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 128,
+        "n_blocks": 3,
+        "dropout": 0.2,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 2,
+        "dropout": 0.1,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 3,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 3,
+        "dropout": 0.1,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 3,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      },
+      {
+        "d_block": 256,
+        "n_blocks": 3,
+        "dropout": 0.2,
+        "lr": 0.002,
+        "k": 16,
+        "weight_decay": 0.0003,
+        "epochs": 120
+      }
+    ]
+  },
+  "external_outcomes_used_in_selection": false,
+  "no_posthoc_rule": "No grid, fold, seed, metric, candidate-family or alpha rule may be changed after nested results are observed.",
+  "analysis_name": "Nested grouped model-selection specification",
+  "analysis_date": "2026-08-15"
+}

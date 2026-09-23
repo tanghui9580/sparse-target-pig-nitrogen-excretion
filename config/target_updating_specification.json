@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETE",
+  "primary_prior": "MLR+RF",
+  "budgets": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "sampling": [
+    "Random",
+    "P2-PAM",
+    "RSGS"
+  ],
+  "formal_updaters": [
+    "Mean",
+    "Affine",
+    "CG-HPP",
+    "TargetWeightedFullRF"
+  ],
+  "controls_and_boundaries": [
+    "NoUpdate",
+    "TargetOnlyRidge",
+    "TargetOnlyElasticNet",
+    "TargetOnlyRF"
+  ],
+  "realizations": 504,
+  "rotation_design": "84 allocation cycles × 6 balanced rotations",
+  "rotation_seed": 20260804,
+  "random_selection_seed": 20260811,
+  "selected_source_exit": true,
+  "metric_denominator": {
+    "FN_full_91_source_sample_SD": 3.217805307720104,
+    "UN_full_91_source_sample_SD": 4.313662326688805
+  },
+  "selector_features": [
+    "Initial_BW_kg",
+    "DMI_kg_d",
+    "Analysis_N_Intake_g_d",
+    "N_to_DMI_g_kg",
+    "DMI_per_BW",
+    "N_Intake_per_BW",
+    "Analysis_Diet_CP_pct_DM",
+    "Analysis_Diet_EE_pct_DM",
+    "Analysis_Diet_NDF_pct_DM",
+    "Analysis_Diet_ADF_pct_DM",
+    "Diet_Ash_pct_DM"
+  ],
+  "starch_selector_rule": "excluded because all 546 values are structurally missing",
+  "updater_hyper": {
+    "FN": {
+      "center": 5.96136056250819,
+      "scale": 2.9052151506932957,
+      "sigma": 1.800978083531589
+    },
+    "UN": {
+      "center": 11.243258344053345,
+      "scale": 7.766768073081578,
+      "sigma": 4.616231847943819
+    }
+  },
+  "fullrf": {
+    "target_weight": "906/b per local animal; historical weight=1",
+    "trees": 60,
+    "seed": 20260524,
+    "endpoint_config": {
+      "FN": {
+        "min_samples_leaf": 1,
+        "max_features": 0.75,
+        "max_depth": 8
+      },
+      "UN": {
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": null
+      }
+    }
+  },
+  "local_only": {
+    "Ridge_alpha": 1.0,
+    "ElasticNet_alpha": 0.1,
+    "ElasticNet_l1_ratio": 0.5,
+    "RF_trees": 60,
+    "RF_seed": 20260524
+  },
+  "procedure_selection": "minimum mean AUBC_3_12 across 504 realizations; point selection",
+  "environment": {
+    "python": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "leakage_assertions": {
+    "sampling_uses_FN_UN_outcomes": false,
+    "one_outcome_record_per_selected_source": true,
+    "other_five_selected_source_labels_visible": false,
+    "selected_source_in_evaluation": false,
+    "common_unmeasured_used_for_sampling_pairwise": true,
+    "RSGS_uses_only_pre_measurement_predictions_and_P2": true
+  },
+  "selected_sampling": "RSGS",
+  "selected_updater": "CG-HPP",
+  "input_checksums": {
+    "matrix_906_sha256": "1d18c1867b1ccd21df1bd3f12c9b738c748c9aef0606e9c51adddee6ada2bd60",
+    "predictions_546_sha256": "61f2bba4b757ebf5f73188c5a6c6b4ecf77e566be18dbabba545ba7adf807dc0",
+    "oof_673_sha256": "3556423b193d25de165ac2e661acfc7d995f627fd1dbf384c69041a2207ebf6a",
+    "primary_model_specification_sha256": "7665792a383a1b588c5d9aac3262b5aa341e2f0eb83ec79522180b71d82c292f"
+  },
+  "response_surface_selector": {
+    "regions": "P2-PAM Voronoi regions",
+    "surface": "all-906 MLR+RF FN/UN source-mean predictions",
+    "kernel": "RBF",
+    "length_scale": "median positive pairwise P2 distance",
+    "ridge": 1e-05
+  },
+  "selected_AUBC_mean": 0.552041885659418
+}

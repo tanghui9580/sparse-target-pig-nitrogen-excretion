@@ -1,0 +1,18 @@
+node_id,stage,lane,x_order,y_order,node_type,display_label,key_detail,role,highlight
+development673,Historical evidence,Development universe,0,1,data_stage,673-record development set,122 study groups; sole selection universe for P0-P3 and architecture development,Model-development dataset,H1
+predictor_layers,Historical evidence,Predictor information,1,1,analysis,P0-P3 predictor-information evaluation,P0 nitrogen intake; P1 animal/intake; P2 routine chemistry; P3 adds SID Lys/Met/Thr/Trp; six model families,Determine practical pre-assay information depth,H1
+p2specified,Historical evidence,Information-tier decision,2,1,decision,P2 retained as practical information tier,Full-673 P3 adds no reproducible cross-family gain; 6/6 bootstrap intervals span zero; P3 retained as value-of-information extension,Parsimony/value-of-information decision,H1
+benchmark,Historical evidence,Architecture selection,3,1,analysis,P2-specified ten-model architecture benchmark,Same 673 records; study-grouped outer 5-fold x inner 4-fold nested evaluation,Prespecified Mean NRMSE ranking,H1
+winner,Historical evidence,Selected architecture,4,1,decision,Selected literature-derived model: MLR+RF,Mean NRMSE 0.523065; MLR+ET 0.524244,Selected architecture; later target-domain analyses use this specification,H1
+confirmation233,Held-out confirmation,Confirmation,5,1,data_stage,233-record held-out confirmation,48 unseen study groups; no study overlap; confirmation only,Evaluate the already selected information tier/architecture without reselection,H1
+all906,Prior refit,Refit,6,1,data_stage,Refit selected architecture on all 906 historical records,673 + 233 after confirmation,Historical prior for target-domain evaluation,H1
+zero546,Target evaluation,Evaluation before updating,7,2,data_stage,546 target evaluation before updating,91 source-specific diets x 6 pigs; evaluation at source-specific-diet mean level,Direct target-domain evaluation,H2
+failure,Target evaluation,Direct-transfer degradation,8,2,decision,Transport degradation,Strongest for UN,Trigger for sparse target adaptation,H2
+shift,Target diagnosis,Diagnosis,8,1,analysis,Describe target-domain differences,Predictor distributions + calibration/agreement diagnostics,Context for transport difficulty,H2
+sampling,Sparse target measurement,Experiment matrix,9,3,factor,Measurement selection,Random / P2-PAM representative sampling / response-surface-guided,Outcome-blind target measurement planning,H3
+updating,Sparse target measurement,Experiment matrix,9,2,factor,Model updating,No update / mean / affine / target-only models / target-weighted RF / CG-HPP,Compare updater complexity under sparse target labels,H3
+budget,Sparse target measurement,Experiment matrix,9,1,factor,Measurement budget,3 / 6 / 9 / 12 measured source-specific diets; 15/18/21 post hoc extended-budget analysis,Fixed-budget axis,H3
+selectedproc,Selected procedure,Procedure selection,10,2,decision,Selected measurement-and-updating procedure,Response-surface-guided sampling + CG-HPP; primary AUBC 0.552,Integrated primary-budget performance,H3
+arch546,Robustness analyses,Model-type robustness,11,3,stress_test,546 model-type robustness,MLR+RF / MLR / RF / TabM; 3/6/9/12 budgets,No architecture reselection,H4
+sow80,Robustness analyses,Gestating-sow evaluation,11,2,stress_test,Gestating-sow cross-physiology evaluation,80 treatment/stage means; 8 studies; 3/6/9/12 measurements,Cross-physiological feasibility evidence,H4
+measurementdepth,Robustness analysis,Measurement depth,11,1,robustness,Within-diet measurement-depth analysis,1 / 3 / 6 pigs per selected diet; 3/6/9/12 diet budgets,Measurement-depth analysis,Robustness

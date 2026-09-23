@@ -1,0 +1,30 @@
+name: reproducibility
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  release-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - name: Install pinned dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      - name: Release reproducibility audit
+        run: python scripts/reproduce.py release-audit --jobs 1
+      - name: Show publication build report
+        run: cat generated/PUBLICATION_BUILD_REPORT.txt
+      - name: Upload publication verification reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-verification-reports
+          path: |
+            generated/PUBLICATION_BUILD_REPORT.txt
+            generated/PUBLICATION_ARTIFACT_HASH_CHECK.csv

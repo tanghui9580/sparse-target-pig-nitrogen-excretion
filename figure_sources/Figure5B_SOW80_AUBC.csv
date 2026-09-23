@@ -1,0 +1,5 @@
+architecture,AUBC_point,Study_cluster_CI95_lower,Study_cluster_CI95_upper,n_studies,n_bootstrap,interval_label,inference_unit,budget_grid,AUBC_scope
+MLR,0.7123069122045149,0.5048517250946951,0.9045498615833192,8,10000,95% whole-study cluster-bootstrap interval,8 independent studies,3 / 6 / 9 / 12,AUBC integrates the full four-budget performance–budget curve
+RF,0.7534186273509762,0.5682371096020417,0.9371650881599662,8,10000,95% whole-study cluster-bootstrap interval,8 independent studies,3 / 6 / 9 / 12,AUBC integrates the full four-budget performance–budget curve
+TabM,0.6447876724563305,0.5359223600686938,0.7699175373755041,8,10000,95% whole-study cluster-bootstrap interval,8 independent studies,3 / 6 / 9 / 12,AUBC integrates the full four-budget performance–budget curve
+MLR+RF,0.7268483157167909,0.533998574021506,0.9127140640692282,8,10000,95% whole-study cluster-bootstrap interval,8 independent studies,3 / 6 / 9 / 12,AUBC integrates the full four-budget performance–budget curve

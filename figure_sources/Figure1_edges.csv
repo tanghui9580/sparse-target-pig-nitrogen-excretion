@@ -1,0 +1,19 @@
+from_node,to_node,edge_type,label
+development673,predictor_layers,primary,P0-P3 information-depth evaluation
+predictor_layers,p2specified,decision,Six-model full-673 evidence
+p2specified,benchmark,primary,P2 specified before architecture benchmark
+benchmark,winner,decision,Prespecified nested ranking
+winner,confirmation233,primary,Held-out confirmation only
+confirmation233,all906,primary,Confirmation complete then all-history refit
+all906,zero546,primary,Direct target-domain evaluation
+zero546,failure,discovery,Observed transport degradation
+failure,shift,diagnostic_branch,Describe target-domain differences
+failure,sampling,experiment_branch,Sparse target measurement triggered
+failure,updating,experiment_branch,Sparse target measurement triggered
+failure,budget,experiment_branch,Sparse target measurement triggered
+sampling,selectedproc,merge,Sampling x updating x budget
+updating,selectedproc,merge,Sampling x updating x budget
+budget,selectedproc,merge,Sampling x updating x budget
+selectedproc,arch546,post_selection_branch,Same selected measurement-and-updating procedure
+selectedproc,sow80,post_selection_branch,Same selected measurement-and-updating procedure
+selectedproc,measurementdepth,measurement_depth_analysis,Fixed procedure; vary within-diet measurement depth

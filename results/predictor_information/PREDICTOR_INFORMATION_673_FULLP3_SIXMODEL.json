@@ -1,0 +1,155 @@
+{
+  "analysis_id": "PREDICTOR_INFORMATION_673_FULLP3_SIXMODEL",
+  "selection_data": {
+    "records": 673,
+    "study_groups": 122,
+    "role": "sole P0-P3 selection universe"
+  },
+  "confirmation_data": {
+    "records": 233,
+    "study_groups": 48,
+    "role": "confirmation only; cannot alter tier"
+  },
+  "study_id_overlap": 0,
+  "cv": "Study_ID GroupKFold(n_splits=5) within 673; ElasticNet/SVR use grouped inner tuning within each outer-training fold",
+  "primary_metric": "0.5*(RMSE_FN/sampleSD_FN + RMSE_UN/sampleSD_UN)",
+  "P3_coverage": {
+    "development": "673/673 positive four-SIDAA",
+    "confirmation": "233/233 positive four-SIDAA"
+  },
+  "model_families": [
+    "MLR",
+    "ElasticNet",
+    "SVR",
+    "RandomForest",
+    "ExtraTrees",
+    "XGBoost"
+  ],
+  "P2_P3_development": [
+    {
+      "model": "MLR",
+      "P2": 0.5353746341506627,
+      "P3": 0.5441867206751063,
+      "delta_P3_minus_P2": 0.008812086524443652,
+      "CI2.5": -0.0021913332369626337,
+      "CI97.5": 0.02240472344162879,
+      "P_P3_better": 0.0629
+    },
+    {
+      "model": "ElasticNet",
+      "P2": 0.5371853695266688,
+      "P3": 0.5416841738560059,
+      "delta_P3_minus_P2": 0.004498804329337025,
+      "CI2.5": -0.005815283853324881,
+      "CI97.5": 0.01499617712795679,
+      "P_P3_better": 0.1965
+    },
+    {
+      "model": "SVR",
+      "P2": 0.5199903940475157,
+      "P3": 0.5187907224090595,
+      "delta_P3_minus_P2": -0.0011996716384561346,
+      "CI2.5": -0.013392517981874566,
+      "CI97.5": 0.011312519117881852,
+      "P_P3_better": 0.5729
+    },
+    {
+      "model": "RandomForest",
+      "P2": 0.5249773418277739,
+      "P3": 0.5297338778640084,
+      "delta_P3_minus_P2": 0.004756536036234493,
+      "CI2.5": -0.002715214503388333,
+      "CI97.5": 0.012388558552023773,
+      "P_P3_better": 0.0998
+    },
+    {
+      "model": "ExtraTrees",
+      "P2": 0.520339751830695,
+      "P3": 0.5201214615731697,
+      "delta_P3_minus_P2": -0.00021829025752528874,
+      "CI2.5": -0.006558157631305764,
+      "CI97.5": 0.006703903022774461,
+      "P_P3_better": 0.527
+    },
+    {
+      "model": "XGBoost",
+      "P2": 0.5441457933518556,
+      "P3": 0.5382997090889032,
+      "delta_P3_minus_P2": -0.005846084262952411,
+      "CI2.5": -0.018188917417731477,
+      "CI97.5": 0.0065301483532965166,
+      "P_P3_better": 0.829
+    }
+  ],
+  "P2_P3_confirmation": [
+    {
+      "model": "MLR",
+      "P2": 0.6125249086748505,
+      "P3": 0.6128335739289482,
+      "delta_P3_minus_P2": 0.0003086652540976731,
+      "CI2.5": -0.017845788818956092,
+      "CI97.5": 0.02456397090108893
+    },
+    {
+      "model": "ElasticNet",
+      "P2": 0.6099103768015821,
+      "P3": 0.6057637338122277,
+      "delta_P3_minus_P2": -0.00414664298935441,
+      "CI2.5": -0.02104827802094367,
+      "CI97.5": 0.01452035382496714
+    },
+    {
+      "model": "SVR",
+      "P2": 0.6001271774753778,
+      "P3": 0.5815967313409012,
+      "delta_P3_minus_P2": -0.01853044613447663,
+      "CI2.5": -0.04119847453197441,
+      "CI97.5": 0.0032600229014413994
+    },
+    {
+      "model": "RandomForest",
+      "P2": 0.625278621824551,
+      "P3": 0.6216032698723287,
+      "delta_P3_minus_P2": -0.003675351952222239,
+      "CI2.5": -0.014356889925551996,
+      "CI97.5": 0.00524443500618008
+    },
+    {
+      "model": "ExtraTrees",
+      "P2": 0.6334829521769171,
+      "P3": 0.6179897380731989,
+      "delta_P3_minus_P2": -0.015493214103718178,
+      "CI2.5": -0.04028871862263001,
+      "CI97.5": 0.004771858734425779
+    },
+    {
+      "model": "XGBoost",
+      "P2": 0.6535083062489218,
+      "P3": 0.6478588420665206,
+      "delta_P3_minus_P2": -0.005649464182401198,
+      "CI2.5": -0.03680528233833359,
+      "CI97.5": 0.02437273618087017
+    }
+  ],
+  "decision": "P2 retained as the primary practical predictor-information tier because adding SID Lys, Met, Thr and Trp did not yield a reproducible improvement across six model families on the complete 673-record development set. This is a parsimony/value-of-information and deployability decision, not evidence that P2 statistically outperformed P3.",
+  "downstream": "The P2-based ten-model comparison is unchanged; MLR+RF remains the selected starting architecture. The 233-record confirmation, 906-record refit, 546-record target analysis, 504-allocation analysis, and SOW80 analysis are unchanged.",
+  "model_integrity_note": "For MLR, RF, ExtraTrees, and XGBoost, the 673-record P0/P1/P2 values are directly reproduced. ElasticNet and SVR were rerun with grouped inner tuning because complete executable parameter and out-of-fold records for those two model-tier combinations were unavailable. The 233-record confirmation outcomes were not used for tuning or predictor-tier selection.",
+  "development_summary": {
+    "point_directions": "3 favor P2; 3 favor P3",
+    "bootstrap_intervals_spanning_zero": "6/6",
+    "best_P2": {
+      "model": "SVR",
+      "Primary_NRMSE": 0.5199903940475157
+    },
+    "best_P3": {
+      "model": "SVR",
+      "Primary_NRMSE": 0.5187907224090595
+    }
+  },
+  "confirmation_summary": {
+    "bootstrap_intervals_spanning_zero": "6/6",
+    "role": "descriptive held-out confirmation only"
+  },
+  "analysis_date": "2026-09-08",
+  "previous_703_278": "Previous 703/278 split retained only for historical reference; it is not used in the 673/233 analysis."
+}

@@ -1,0 +1,33 @@
+endpoint,metric,budget,procedure,value,evaluation_unit,evaluation_n
+FN,R2,3,Historical model without target-domain updating,0.6789090517,unmeasured source-specific-diet mean,88
+FN,R2,6,Historical model without target-domain updating,0.6752839972,unmeasured source-specific-diet mean,85
+FN,R2,9,Historical model without target-domain updating,0.6944705982,unmeasured source-specific-diet mean,82
+FN,R2,12,Historical model without target-domain updating,0.6946889312,unmeasured source-specific-diet mean,79
+FN,R2,3,CG-HPP updating,0.7216452505,unmeasured source-specific-diet mean,88
+FN,R2,6,CG-HPP updating,0.7286563830,unmeasured source-specific-diet mean,85
+FN,R2,9,CG-HPP updating,0.7782159200,unmeasured source-specific-diet mean,82
+FN,R2,12,CG-HPP updating,0.8466857311,unmeasured source-specific-diet mean,79
+FN,RMSE,3,Historical model without target-domain updating,1.7944347213,unmeasured source-specific-diet mean,88
+FN,RMSE,6,Historical model without target-domain updating,1.8170857335,unmeasured source-specific-diet mean,85
+FN,RMSE,9,Historical model without target-domain updating,1.7840338036,unmeasured source-specific-diet mean,82
+FN,RMSE,12,Historical model without target-domain updating,1.7519425415,unmeasured source-specific-diet mean,79
+FN,RMSE,3,CG-HPP updating,1.6652183011,unmeasured source-specific-diet mean,88
+FN,RMSE,6,CG-HPP updating,1.6565244119,unmeasured source-specific-diet mean,85
+FN,RMSE,9,CG-HPP updating,1.5065081070,unmeasured source-specific-diet mean,82
+FN,RMSE,12,CG-HPP updating,1.2380481619,unmeasured source-specific-diet mean,79
+UN,R2,3,Historical model without target-domain updating,-0.8727325268,unmeasured source-specific-diet mean,88
+UN,R2,6,Historical model without target-domain updating,-0.9005883497,unmeasured source-specific-diet mean,85
+UN,R2,9,Historical model without target-domain updating,-0.8831018952,unmeasured source-specific-diet mean,82
+UN,R2,12,Historical model without target-domain updating,-1.0390002297,unmeasured source-specific-diet mean,79
+UN,R2,3,CG-HPP updating,0.3989994912,unmeasured source-specific-diet mean,88
+UN,R2,6,CG-HPP updating,0.6124699369,unmeasured source-specific-diet mean,85
+UN,R2,9,CG-HPP updating,0.6134795660,unmeasured source-specific-diet mean,82
+UN,R2,12,CG-HPP updating,0.5239476133,unmeasured source-specific-diet mean,79
+UN,RMSE,3,Historical model without target-domain updating,5.6306573167,unmeasured source-specific-diet mean,88
+UN,RMSE,6,Historical model without target-domain updating,5.6285799813,unmeasured source-specific-diet mean,85
+UN,RMSE,9,Historical model without target-domain updating,5.7476416381,unmeasured source-specific-diet mean,82
+UN,RMSE,12,Historical model without target-domain updating,5.8915755698,unmeasured source-specific-diet mean,79
+UN,RMSE,3,CG-HPP updating,3.1743147430,unmeasured source-specific-diet mean,88
+UN,RMSE,6,CG-HPP updating,2.5148279825,unmeasured source-specific-diet mean,85
+UN,RMSE,9,CG-HPP updating,2.5907954073,unmeasured source-specific-diet mean,82
+UN,RMSE,12,CG-HPP updating,2.8178296932,unmeasured source-specific-diet mean,79
