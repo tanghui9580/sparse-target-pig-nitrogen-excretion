@@ -1,6 +1,6 @@
 # Release-preparation changelog
 
-## Unreleased — target public release v1.0.0 (date pending)
+## v1.0.0 — 2026-09-24
 
 ### V6.3.2 repository hardening
 - Added release-level duplicate-contract checks for intentionally copied canonical inputs/results across self-contained subpackages.

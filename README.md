@@ -122,6 +122,6 @@ Downstream target-domain analyses after selection of the MLR+RF starting model a
 
 Original software code is released under the MIT License (`LICENSE`). That license does **not** automatically apply to data matrices, literature-derived values, publication artwork, or third-party source material; see `DATA_RIGHTS.md`.
 
-`CITATION.cff` contains release metadata but intentionally omits a repository URL and archive DOI until those identifiers actually exist. After the public GitHub release and permanent archive are created, add the real repository URL and version DOI to `CITATION.cff` and the manuscript. Do not invent placeholders.
+`CITATION.cff` identifies this repository: https://github.com/tanghui9580/sparse-target-pig-nitrogen-excretion. The manuscript-submission version is the `v1.0.0` GitHub release. No archive DOI is claimed.
 
 See `GITHUB_RELEASE_CHECKLIST.md` for the final release sequence and `CHANGELOG.md` for package-hardening history.

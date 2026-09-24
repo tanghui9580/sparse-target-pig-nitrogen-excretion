@@ -1,9 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this software or reproducibility package, please cite the associated manuscript. Add the public repository URL and permanent archive DOI to this file after release and before manuscript submission."
+message: "If you use this software or reproducibility package, please cite the associated manuscript and this repository."
 title: "Sparse target measurements restore pig nitrogen-excretion predictions across independent settings"
 type: software
 authors:
   - family-names: "Tang"
     given-names: "Hui"
 version: "1.0.0"
+date-released: 2026-09-24
+repository-code: "https://github.com/tanghui9580/sparse-target-pig-nitrogen-excretion"
 license: MIT

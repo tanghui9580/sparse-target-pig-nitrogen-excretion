@@ -122,6 +122,6 @@ MLR+RF 起始模型确定之后的目标域分析可由本仓库执行。P0–P3
 
 作者原创软件代码使用 MIT License（`LICENSE`），但该软件许可**不自动延伸**到数据矩阵、文献整理数值、投稿 artwork 或第三方来源内容；见 `DATA_RIGHTS.md`。
 
-`CITATION.cff` 已包含发布元数据，但在真实公开仓库 URL 和永久归档 DOI 尚未生成前故意不填写这些字段。GitHub Release 和永久归档建立后，再把真实 URL/DOI 同步到 `CITATION.cff` 与稿件，不能使用虚构占位符。
+`CITATION.cff` 已写入仓库地址：https://github.com/tanghui9580/sparse-target-pig-nitrogen-excretion。投稿对应版本为 GitHub `v1.0.0` Release。本仓库不声称拥有归档 DOI。
 
 正式发布顺序见 `GITHUB_RELEASE_CHECKLIST.md`；本轮公开包硬化记录见 `CHANGELOG.md`。
